@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="./css/reset.css">
+		<link rel="stylesheet" type="text/css" href="./css/variable.css">
+		<title></title>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<ul>
+					<li ><a class="nav priceAsce">价格升序</a></li>
+					 <!-- class="cur" -->
+					<li ><a class="nav priceDesc">价格降序</a></li>
+					<li ><a class="nav buyAsce">交易量升序</a></li>
+					<li ><a class="nav buyDesc">交易量降序</a></li>
+					<li>
+						<form>
+							<input type="text" class="test min" placeholder="¥">
+							<label>-<label>
+							<input type="text" class="test max" placeholder="¥">
+							<input type="button" value="确定" class="btn price">
+						</form>
+					</li>
+					<li class="add">
+						<a class="addBar">所在地</a>
+						<div class="address">
+							<a>上海</a>
+							<a>江苏南京</a>
+							<a>江苏常州</a>
+							<a>广东中山</a>
+							<a>上海</a>
+							<a>上海</a>
+							<a>上海</a>
+							<a>上海</a>
+							<a>上海</a>
+							<a>上海</a>
+							<input type="text" class="test max" placeholder="多个地区用逗号分隔">
+							<input type="button" value="确定" class="btn">
+						</div>
+					</li>
+					<li class="right">
+						<span class="item toleft">&lt;</span>
+						<span class="page">
+							<mark class="num">1</mark>/
+							<mark class="maxNum">6<mark>
+						</span>
+						<span class="item toright">&gt;</span>
+					</li>
+				</ul>
+			</div>
+			<div class="list"></div>
+		</div>
+		<script src="./js/jquery@2.2.4.js"></script>
+		<script src="./js/jiyoujia.js"></script>
+	</body>
+</html>

@@ -1,0 +1,387 @@
+.full {
+  width: 100%;
+}
+.w1190 {
+  margin: 0 auto;
+  width: 1190px;
+}
+.topNav {
+  border-bottom: 2px solid #00ccce;
+}
+.topNav .w1190 {
+  height: 40px;
+}
+.topNav .w1190 .left {
+  float: left;
+}
+.topNav .w1190 .right {
+  float: right;
+}
+.topNav .w1190 .setFont > div {
+  float: left;
+  margin: 12px 0;
+  padding: 0 36px;
+}
+.topNav .w1190 .setFont > div.normal {
+  font-size: 14px;
+  border-right: 1px solid #e6e6e6;
+}
+.topNav .w1190 .setFont > div a:hover {
+  color: #00ccce;
+}
+.facade {
+  padding-top: 20px;
+  overflow: hidden;
+  background-color: #f2f2f2;
+}
+.facade .w1190 {
+  position: relative;
+}
+.facade .left {
+  float: left;
+  width: 890px;
+  height: 500px;
+}
+.facade .left .banner {
+  float: left;
+  width: 540px;
+  height: 500px;
+  background-color: #00ccce;
+}
+.facade .left .left-rg {
+  float: left;
+  width: 350px;
+}
+.facade .right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 290px;
+  height: 660px;
+}
+.facade .right div {
+  position: relative;
+  overflow: hidden;
+  height: 194px;
+}
+.facade .right div .day {
+  position: absolute;
+  width: 110px;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  font-size: 12px;
+  line-height: 30px;
+  color: #fff;
+  background-color: #fe645a;
+}
+.facade .right .r-top {
+  height: 78px;
+  text-align: center;
+  background-color: #51d3d3;
+}
+.facade .right .r-top .begin {
+  padding-left: 20px;
+  font-size: 28px;
+  line-height: 78px;
+  color: #fff;
+}
+.facade .right .r-top .btn {
+  font-size: 0;
+}
+.facade .right .r-top .btn a {
+  display: inline-block;
+  width: 28px;
+  line-height: 28px;
+  font-size: 18px;
+  color: #999;
+}
+.facade .right .r-top .btn a:hover {
+  background-color: #c7f4e9;
+}
+.facade .right .r-top .btn .btn-lf {
+  background-color: rgba(146,231,223,0.4);
+}
+.facade .right .r-top .btn .btn-rg {
+  background-color: rgba(181,240,232,0.4);
+}
+.facade .bottom {
+  float: left;
+  margin-top: 20px;
+  width: 100%;
+  height: 140px;
+  background-color: #fff;
+}
+.facade .bottom .data {
+  margin-left: 9%;
+  width: 890px;
+}
+.facade .bottom .data .box {
+  display: inline-block;
+  position: relative;
+  float: left;
+  width: 222px;
+  text-align: center;
+}
+.facade .bottom .data .box .b-text {
+  margin-top: 40px;
+  line-height: 28px;
+  display: inline-block;
+  color: #9b9b9b;
+}
+.facade .bottom .data .box .b-num {
+  display: inline-block;
+  font-size: 30px;
+}
+.facade .bottom .data .box .line {
+  display: inline-block;
+  position: absolute;
+  margin-top: -40px;
+  margin-left: 42px;
+  width: 1px;
+  height: 80px;
+  transform: rotate(20deg);
+  background-color: #00ccce;
+}
+.hot {
+  height: 634px;
+  background-image: url("../img/bgimg.png");
+  background-position: 50% 0;
+}
+.hot h1 {
+  float: left;
+  width: 100%;
+  margin-top: 13px;
+  text-align: center;
+  font-size: 28px;
+  line-height: 78px;
+  color: #fff;
+}
+.hot h2 {
+  text-align: center;
+}
+.hot h2 b {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 30px;
+  color: #fff;
+}
+.hot h2 > a {
+  display: inline-block;
+  padding: 0 10px;
+  border: 1px solid #fff;
+  font-size: 12px;
+  line-height: 28px;
+  border-radius: 2px;
+  color: #fff;
+}
+.hot h2 > a:hover {
+  background-color: #00ccce;
+  border: 1px solid #00ccce;
+}
+.hot .container {
+  width: 1210px;
+}
+.hot .container .case {
+  float: left;
+  margin-top: 20px;
+  margin-right: 20px;
+  width: 222px;
+  height: 450px;
+}
+.hot .container .case a {
+  display: block;
+  height: 450px;
+}
+.hot .container .case a span {
+  display: block;
+}
+.hot .container .case a .item-title {
+  margin: 0 auto;
+  width: 200px;
+  font-size: 24px;
+  line-height: 58px;
+}
+.hot .container .case a .des {
+  padding: 16px 0 0 18px;
+  width: 138px;
+  font-size: 12px;
+  color: #adb8c3;
+}
+.hot .container .case a .text-per {
+  padding: 30px 0 0 18px;
+  font-size: 16px;
+  color: #9ca7b2;
+}
+.hot .container .case a .per {
+  padding: 10px 0 0 18px;
+  font-size: 30px;
+  color: #00ccce;
+}
+.hot .container .case .case1 {
+  background-image: url("../image/7.jpg");
+}
+.hot .container .case .case2 {
+  background-image: url("../image/8.jpg");
+}
+.hot .container .case .case3 {
+  background-image: url("../image/9.jpg");
+}
+.hot .container .case .case4 {
+  background-image: url("../image/10.jpg");
+}
+.hot .container .case .case5 {
+  background-image: url("../image/11.jpg");
+}
+.list {
+  margin-top: 50px;
+}
+.list .title {
+  background-image: url("../image/bg_title.png");
+  background-repeat: repeat-x;
+  text-align: center;
+  font-size: 30px;
+}
+.list .title span {
+  font-size: 30px;
+  padding: 10px;
+  background-color: #fff;
+}
+.list .title .text {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #8f8f8f;
+}
+.list .floor {
+  width: 1190px;
+  margin: 0 auto;
+  color: #a6a6a6;
+}
+.list .floor span.num {
+  font-size: 14px;
+}
+.list .floor span.name {
+  font-size: 20px;
+}
+.list .floor:hover {
+  color: #00ccce;
+}
+.list .content {
+  width: 1190px;
+  height: 370px;
+  margin: 0px auto;
+  display: flex;
+}
+.list .content .main {
+  width: 280px;
+  margin-top: 10px;
+}
+.list .content .main:not(:last-child) {
+  margin-right: 20px;
+}
+.list .content .main .pic {
+  width: 280px;
+  height: 187px;
+}
+.list .content .main .current {
+  font-size: 15px;
+  margin: 11px 15px;
+  height: 42px;
+}
+.list .content .main label {
+  display: inline-block;
+  height: 23px;
+  color: #999;
+  line-height: 23px;
+  background-color: #f0f0f0;
+  padding: 0 8px;
+  margin-left: 10px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+.list .content .main .bar {
+  width: 250px;
+  height: 6px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #00ccce;
+  border-right-color: #ededed;
+  border-right-style: solid;
+}
+.list .content .main .project {
+  width: 250px;
+  margin: 10px;
+}
+.list .content .main .project span {
+  text-align: center;
+  display: inline-block;
+}
+.list .content .main .project span.spLeft {
+  width: 50px;
+}
+.list .content .main .project span.spMiddle {
+  width: 130px;
+}
+.list .content .main .project span.spRight {
+  width: 50px;
+  margin-right: 10px;
+}
+.list .content .main .project span .num {
+  display: block;
+  font-size: 14px;
+  line-height: 14px;
+  color: #333;
+}
+.list .content .main .project span .name {
+  display: block;
+  font-size: 12px;
+  line-height: 12px;
+  margin-top: 5px;
+  color: #999;
+}
+.list .content .main.top {
+  position: relative;
+}
+.list .content .main.top .pic {
+  width: 346px;
+  height: 350px;
+  z-index: -1;
+  position: absolute;
+  left: -66px;
+}
+.list .content .main.top.img .nav .pic {
+  width: 280px;
+  z-index: -1;
+  position: absolute;
+  left: 0px;
+}
+.list .content .main.top .item {
+  color: #fff;
+  margin-top: 27px;
+  margin-left: 28px;
+}
+.list .content .main.top .item .name {
+  font-size: 24px;
+  line-height: 24px;
+}
+.list .content .main.top .item .money {
+  font-size: 14px;
+  line-height: 14px;
+}
+.list .content .main.top .item span {
+  display: block;
+  width: 100px;
+  height: 31px;
+  line-height: 31px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 20px;
+  color: #78c9cf;
+  background-color: #fff;
+}
+.fixedNav {
+  position: fixed;
+  top: 382px;
+  right: 50px;
+}

@@ -1,0 +1,428 @@
+body
+	overflow-x hidden
+.topNav
+	background-color rgb(36,36,36)
+	width 100%
+	height 60px
+	position relative
+	.topnav
+		margin 0 auto
+		width 980px
+		height 60px
+		color rgb(255,255,255)
+		.navtit
+			margin-top 10px
+			float left
+			color rgb(255,238,0)
+			.title
+				float right
+				font-size 18px
+				width 42px
+				font-weight bold
+		.items
+			display block
+			padding-top 15px
+			.item
+				margin 0 4px
+				width 68px
+				height 30px
+				padding-top 5px
+				border-radius 15px
+				float left
+				border 2px solid rgb(255,255,255)
+				text-align center
+				&:hover:not(.item-icon)
+					color rgb(255,238,0)
+					border 2px solid rgb(255,238,0)
+			.item-icon
+				background-color rgb(255,238,0)
+				color rgb(0,0,0)	
+				border 2px solid rgb(255,238,0)	
+.head
+	width 100%
+	height 580px
+	background-color rgb(61,172,103)
+	.top
+		position absolute
+		top 60px
+		left 50%
+		width 1920px
+		margin-left -960px
+	.btn
+		display block
+		position absolute
+		left 50%
+		top 376px
+		margin-left -5px
+		transform translate(-50%)
+		width 230px
+		height 50px
+		background #fae90b
+		color #e7153a
+		border-color #1e1c6f
+		border-style solid
+		border-width 2px 2px 4px 2px
+		border-radius 20px
+		cursor pointer
+		text-align center
+		.txt
+			line-height 44px
+			font-size 30px
+			font-weight bold
+			display inline-block
+			
+	.inlet
+		position absolute
+		width 1000px
+		left 50%
+		margin-top 445px
+		transform translate(-50%)
+		.item
+			float left
+			width 188px
+			height 123px
+			margin-right 10px
+			color rgb(255,255,255)
+			padding: 12px 10px 0;
+			.t
+				display block
+				font-size 24px
+				font-weight bold
+			.c
+				font-size 14px
+		
+item-scale = 1 2 3 4 5
+for num in item-scale
+	.item:nth-of-type({num})
+		background-image url("../image/nav"+num+".jpg")
+.sliderBar
+	position absolute
+	right 10px
+	top 540px
+	z-index 10
+	width 116px
+	&.fix
+		position fixed
+		top 60px
+	.sbHead		
+		height 120px
+		background-image url(../image/sprite.png)
+	.sbBody
+		// height 230px
+		background-color rgb(136,57,242)
+		padding-top 10px
+		text-align center
+		font-size 14px
+		color rgb(255,255,255)
+		ul
+			margin-left 10px
+			width 96px
+			li
+				line-height 32px
+				&:not(:last-child)
+					border-bottom 1px solid rgb(149,80,231)
+	.sbFooter
+		position relative
+		top -58px
+		height 116px
+		z-index -1
+		background-color rgb(121,57,207)
+		border-radius 58px
+		text-align center
+		.gotop
+			display inline-block
+			margin 0 auto
+			margin-top 85px
+			z-index 1
+			font-size 20px
+			font-weight bold
+			color rgb(255,255,255)
+for num in item-scale
+	.{part + num}
+		.hd
+			background-image url("../image/tit_0"+num+".jpg")
+.main
+	padding-top 60px	
+	&.wrap1
+		background-color rgb(129,90,216)
+		height 4709px
+	&.wrap2
+		background-color rgb(102,51,218)
+		height 6512px
+	.box
+		width 980px
+		margin 50px auto
+		
+		&.part3
+			background-color rgb(226,184,0)
+			.hd
+				.tit
+					padding-top 17px
+			.bd
+				.bd-hd
+					.choice
+						background-color rgb(155,128,11)
+						border 1px solid rgb(155,128,11)
+						&:not(:first-child)
+							border-radius 0 8px 8px 0
+							color rgb(155,128,11)
+							background-color rgb(247,225,110)
+		&.part4
+			background-color rgb(238,154,80)
+			.hd
+				.tit
+					padding-top 17px
+			.bd
+				.bd-hd
+					.choice
+						background-color rgb(231,96,38)
+						border 1px solid rgb(231,96,38)
+						&:not(:first-child)
+							border-radius 0 8px 8px 0
+							color rgb(231,96,38)
+							background-color rgb(254,194,124)
+		&.part5
+			background-color rgb(70,119,206)
+			.hd
+				.tit
+					padding-top 24px
+		&.part6
+			background-color rgb(70,119,206)
+			.hd
+				.tit
+					padding-top 24px
+			.bd
+				.bd-hd
+					.choice
+						margin-left: -1px
+						width 320px
+						line-height 50px
+						border: 1px solid #9b800b;
+						background-color rgb(19,69,115)
+						border 1px solid rgb(19,69,115)
+						&:nth-child(2)
+							border-radius 0px
+							color rgb(19,69,115)
+							background-color rgb(123,189,247)
+						&:last-child
+							border-radius 0 8px 8px 0
+							color rgb(19,69,115)
+							background-color rgb(123,189,247)
+		.hd
+			height 93px
+			text-align center
+			background-repeat no-repeat
+			background-position 50% 0
+			.tit
+				padding-top 10px
+				font-size 30px
+				font-weight bold
+				color rgb(255,255,255)
+			.desc
+				font-size 16px
+				color rgb(255,238,0)
+				margin-top 6px
+		.bd
+			.bd-hd
+				height 62px
+				padding 10px 10px 0 10px
+				background -webkit- gradient(linear, 0% 0%, 0% 100%,from(rgba(255,255,255,0)), to(rgba(255,255,255,.5)))/*谷歌*/
+				&.fix
+					position fixed
+					top -10px
+					z-index 10
+				.choice
+					float left
+					display inline-block
+					text-align center
+					width 478px
+					line-height 52px
+					font-size 18px
+					font-weight bold
+					color rgb(255,238,0)
+					border-radius 8px 0 0 8px
+					background-color rgb(79,30,189)
+					border 1px solid rgb(79,30,189)
+					&:not(:first-child)
+						border-radius 0 8px 8px 0
+						color rgb(79,30,189)
+						background-color rgb(147,105,240)
+			.list
+				padding-bottom 30px
+				.lst
+					display inline-block
+					position relative
+					width 244px
+					height 286px
+					padding 10px
+					.lstPic
+						width 224px
+						height 149px
+						position relative
+						overflow hidden
+						.photo
+							display block
+							width 224px
+							height 149px
+							position relative
+							// &:hover
+							// 	top -5%
+							// 	left -5%
+							// 	width 110%
+							// 	height 110%
+						.floating
+							position absolute
+							top 0px
+							left 0px
+							z-index -1
+							text-align center
+							padding-top 25px
+							width 224px
+							height 149px
+							background-color rgba(0,0,0,.5)
+							p
+								font-size 14px
+								font-weight bold
+								color rgb(255,238,0)
+						.discount
+							position absolute
+							right 10px
+							top 10px
+							width 68px
+							height 68px
+							border-radius: 50%
+							background-color rgb(242,62,79)
+							text-align center
+							line-height 20px
+							font-size 14px
+							span
+								display block
+								position relative
+								top 14px
+								color rgb(255,255,255)
+								&.disc
+									font-weight bold
+									color rgb(255,240,110)
+							
+					.lstbd
+						padding 10px
+						background-color rgb(255,255,255)
+						.title
+							white-space nowrap
+							overflow hidden
+							text-overflow ellipsis
+							font-size 16px
+							font-weight bold
+							line-height 24px
+						.describe
+							white-space nowrap
+							overflow hidden
+							text-overflow ellipsis
+							font-size 14px
+							line-height 21px
+						.money
+							position relative
+							padding-top 24px
+							.price
+								font-size 14px
+								color rgb(255,57,57)
+								mark
+									font-size 24px
+									color rgb(255,57,57)
+							.oldPrice
+								padding-top 2px
+								color rgb(118,118,118)
+								text-decoration line-through
+							.buy
+								position absolute
+								right 0
+								bottom 0
+								width 80px
+								line-height 40px
+								text-align center
+								background-color rgb(255,57,57)
+								color rgb(255,255,255)
+								font-size 16px
+								border-radius 5px
+			.more
+				width 980px
+				position relative
+				padding 16px 0 36px
+				.line
+					position absolute
+					top 32px
+					width 412px
+					height 1px
+					background-color rgba(0,0,0,0.5)
+					&.ll
+						left 12px
+					&.lr
+						right 12px
+				a
+					display block
+					width 132px
+					margin 0 auto
+					line-height 34px
+					text-align center
+					border-radius 17px
+					color rgb(255,255,255)
+					background-color rgba(0,0,0,0.5)
+	.wrap-part4
+		height 220px
+		background rgb(62,172,103)
+		.active
+			margin 0 auto
+			padding-top 30px
+			width 980px
+			.a-hd
+				margin-bottom 15px
+				height 55px
+				background-image url("../img/other.png")
+	.footer
+		background-color rgb(255,255,255)
+		.m-foot
+			margin 0 auto
+			width 980px
+			height 150px
+			.m-hd
+				padding-top 32px
+				.lists
+					margin 0 auto
+					width 545px
+					.list
+						float left
+						font-size 12px
+						color rgb(153,153,153)
+						.lis
+							padding 5px
+							&:hover
+								color rgb(255,102,0)
+						.lis-f
+							display block
+							margin-top -5px
+							position relative
+							&:hover+.guanyu
+								display block
+								width 95px		
+						.r-lis
+							color rgb(255,85,85)
+						.guanyu
+							margin-top -110px
+							display none
+							position absolute
+							.gy
+								border 1px solid rgb(153,153,153)
+								 background rgb(255,255,255)	
+								.g-list
+									padding 5px 0 5px 5px 
+									&:hover
+										color rgb(120,120,120)
+										background rgb(220,220,220)
+															
+			.m-f
+				img
+					padding-left 100px
+					padding-top 10px
+			.f-img
+				img
+					padding-left 206px												

@@ -1,0 +1,208 @@
+ulcol = rgb(245,245,245)
+*
+	font-size 12px
+	margin 0
+	padding 0
+.wrap
+	width 1190px
+	margin 0 auto
+	.main
+		margin-top 20px
+		ul
+			background-color ulcol
+			border 1px solid rgb(229,229,229)
+			width 1188px
+			height 42px
+			li
+				line-height 40px
+				list-style none
+				float left
+				color rgb(109,109,109)
+				.btn
+					height 23px
+					padding 0 8px
+					background #f40
+					color #fff
+					line-height 23px
+					cursor pointer
+					white-space nowrap
+				&.add
+					position relative
+					.addBar
+						display inline-block
+						line-height 40px
+						padding 0 19px
+						border-left 1px solid ulcol
+						border-right 1px solid ulcol
+						background-color ulcol
+						&:after
+							content ""
+							z-index 2
+							position absolute
+							left 1px
+							top 39px
+							height 2px
+							width 74px
+							background-color rgb(255,255,255)
+							display none
+					.address
+						z-index 1
+						width 200px
+						position absolute
+						top 39px
+						border 1px solid rgb(232,232,232)
+						background-color rgb(255,255,255)
+						display none
+						.test
+							width 120px
+							padding 0 4px
+							height 21px
+							margin-left 10px
+							color rgb(169,169,169)
+							border 1px solid rgb(204,204,204)
+							line-height normal
+							font-family arial
+						a
+							display inline-block
+							margin-left 10px
+							line-height 18px
+					&:hover
+						.addBar
+							border-left-color rgb(232,232,232)
+							border-right-color rgb(232,232,232)
+							background-color rgb(255,255,255)
+							&:after
+								display block
+						.address
+							display block
+				.nav
+					display inline-block
+					line-height 40px
+					padding 0 19px
+					border-right 1px solid ulcol
+					&:not(:first-child)
+						border-left 1px solid ulcol
+					&.cur,&:hover
+						color rgb(255,85,0)
+						border-left-color rgb(232,232,232)
+						border-right-color rgb(232,232,232)
+						background-color rgb(255,255,255)
+				form
+					height 40px
+					line-height 40px
+					padding-left 10px
+					width 180px
+					background-color ulcol
+					position relative
+					&:hover
+						position relative
+						top -1px
+						left -1px
+						height 42px
+						border 1px solid rgb(204,204,204)
+						background-color rgb(255,255,255)
+						.btn
+							display block
+					.test
+						width 45px
+						padding 0 4px
+						height 21px
+						color rgb(169,169,169)
+						border 1px solid rgb(204,204,204)
+						background-color rgb(255,255,255)
+						line-height normal
+						font-family arial
+					.btn
+						position absolute
+						top 8px
+						left 120px
+						display none
+				&.right
+					float right
+					text-align center
+					border-left 1px solid rgb(232,232,232)
+					.page
+						display inline-block
+						width 60px
+						mark
+							color rgb(255,85,0)
+					.item
+						display inline-block
+						width 28px
+						font-weight bold
+						&:hover
+							cursor pointer
+							color rgb(255,85,0)		
+	.list
+		position relative	
+		margin-top 20px
+		.order
+			display inline-block
+			width 220px
+			&:not(:nth-child(5n))
+				margin-right 20px
+			a
+				display inline-block
+				width 220px
+				height 360px
+				background-repeat no-repeat
+				background-size 100% 220px
+				padding 230px 10px 0 10px
+				border 1px solid rgb(232,232,232)
+				&:hover
+					border-color rgb(147,39,60)
+					&+.buy
+						visibility visible
+				.money
+					display inline-block
+					position relative
+					top 2px
+					color rgb(0,0,0)
+					font-size 18px
+					font-weight bold
+				.baoYou
+					display inline-block
+					line-height 16px
+					background-color rgb(255,68,0)
+					color white
+					padding 0 3px
+				.name
+					height 20px
+					font-size 12px
+					margin-top 5px
+				.sold
+					margin-top 15px
+					color rgb(136,136,136)
+				.user
+					margin-top 5px
+					color rgb(136,136,136)
+					display inline-block
+				.location
+					margin-top 5px
+					color rgb(136,136,136)
+					display inline-block
+					float right
+				.icon
+					height 30px
+					margin-top 5px
+					text-align center
+					.icon1
+						float left
+					.icon2
+						float right	
+				
+		.buy
+			float left
+			visibility hidden
+			position relative
+			top -40px
+			left 50% 
+			transform translate(-50%)
+			height 20px
+			border 1px solid rgb(172,172,172)
+			padding 0 20px
+			border-radius 2px
+			box-shadow 0 1px 1px 0 rgba(0,0,0,.4)
+			&:hover
+				visibility visible
+				
