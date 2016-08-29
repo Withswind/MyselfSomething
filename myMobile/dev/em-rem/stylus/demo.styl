@@ -1,0 +1,84 @@
+body
+	background-color gray
+header
+	position relative
+	width 20rem
+	height 2rem
+	background-color black
+	h1
+		text-align center
+		font-size 1rem
+		line-height 2rem
+		color white
+	i
+		position absolute
+		top .2rem
+		display block
+		width 1.6rem
+		height 1.6rem
+		background-color green
+		&.back
+			left .2rem
+		&.option
+			right .2rem
+.container
+	width 20rem
+	.row
+		position relative
+		padding-left 2.8rem
+		width 20rem
+		height 2.1rem
+		background-color white
+		font-size .75rem
+		line-height 2.1rem
+		// &:before
+		// 	position absolute
+		// 	top .525rem
+		// 	left @top
+		// 	display block
+		// 	width 1.05rem
+		// 	height @width
+		// 	// background-color green
+		// 	content ""	
+		img
+			position absolute
+			top .525rem
+			left @top
+			display block
+			width 1.05rem
+			height @width
+		&.single
+			margin .8rem 0
+		&.double:nth-of-type(2n)
+			margin-top .8rem
+			&:after
+				position absolute
+				bottom 0
+				left .5rem
+				width 19rem
+				border-bottom .05rem solid gray
+				content ""
+		&.double:nth-of-type(2n+1)
+			margin-bottom .8rem	
+footer
+	position absolute
+	left 0
+	bottom 0
+	width 20rem
+	background-color white
+	.foot
+		position relative
+		width 5rem
+		float left
+		text-align center
+		img
+			position absolute
+			top .05rem
+			left 1.7rem
+			display block
+			width 1.5rem
+			height @width
+		p
+			font-size .75rem
+			margin-top 1.8rem			
+										
