@@ -89,7 +89,7 @@ $(".lst").mouseenter(function(){
 	$(this).find(".floating").css("z-index","-1");
 });
 
-
+//offset()获取偏移量
 var part1TOP =$(".part1 .bd .bd-hd").offset().top;
 var part2TOP =$(".part2 .bd .bd-hd").offset().top;
 var part3TOP =$(".part3 .bd .bd-hd").offset().top;
